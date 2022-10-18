@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">IUFMP GRM</string>
+    <string name="app_desc">Grievance Management System</string>
+    <string name="user_name">PARTNER</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">REGISTER</string>
+    <string name="send">SEND</string>
+
+    <string name="app_call">Navigation Drawer</string>
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+</resources>

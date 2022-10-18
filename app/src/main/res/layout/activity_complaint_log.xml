@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComplaintLog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary">
+
+                    <TextView
+                        android:id="@+id/Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Complaint"
+                        android:padding="10sp"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:gravity="center_horizontal"/>
+                </androidx.cardview.widget.CardView>
+
+                <!-- SPINNER -->
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_below="@id/Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select complaint category"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginHorizontal="30sp"
+                    android:textColor="#4a4a4a"
+                    android:textSize="15sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/complain"
+                    android:layout_below="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="30sp"
+                    app:cardCornerRadius="8sp"
+                    android:layout_weight=".3">
+
+                    <Spinner
+                        android:id="@+id/comp"
+                        android:backgroundTint="#4a4a4a"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_below="@id/complain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select issue type"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="20sp"
+                    android:textColor="#4a4a4a"
+                    android:textSize="15sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/issues"
+                    android:layout_below="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="30sp"
+                    app:cardCornerRadius="8sp"
+                    android:layout_weight=".3">
+
+                    <Spinner
+                        android:id="@+id/issues2"
+                        android:backgroundTint="#4a4a4a"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_below="@id/issues"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select your location"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginHorizontal="30dp"
+                    android:textColor="#4a4a4a"
+                    android:textSize="15sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/location"
+                    android:layout_below="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="30sp"
+                    app:cardCornerRadius="8sp"
+                    android:layout_weight=".3">
+
+                    <Spinner
+                        android:id="@+id/location2"
+                        android:backgroundTint="#4a4a4a"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_below="@id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select project "
+                    android:layout_marginTop="20sp"
+                    android:layout_marginHorizontal="30dp"
+                    android:textColor="#4a4a4a"
+                    android:textSize="15sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/project"
+                    android:layout_below="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="30sp"
+                    app:cardCornerRadius="8sp"
+                    android:layout_weight=".3">
+
+                    <Spinner
+                        android:id="@+id/project2"
+                        android:backgroundTint="#4a4a4a"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_below="@id/project"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select channel"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginHorizontal="30dp"
+                    android:textColor="#4a4a4a"
+                    android:textSize="15sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/channel"
+                    android:layout_below="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="30sp"
+                    app:cardCornerRadius="8sp"
+                    android:layout_weight=".3">
+
+                    <Spinner
+                        android:id="@+id/channel2"
+                        android:backgroundTint="#4a4a4a"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- PICTURE -->
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="250dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/imageview"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:id="@+id/choosebn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="60dp"
+                        android:text="Select Image"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+                <!-- SUBMISSION -->
+                <EditText
+                    android:id="@+id/complain1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/channel"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rectangle"
+                    android:gravity="center"
+                    android:hint="Type your complaint"
+                    android:textColorHint="@color/black" />
+
+                <ProgressBar
+                    android:id="@+id/loading"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextTextMultiLine"
+                    android:layout_marginHorizontal="80dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#0099ff"
+                    android:gravity="center"
+                    android:text="SUBMIT" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <!-- BOTTOM NAVIGATION -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/basePressColor"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/dashboard"/>
+
+    <item
+        android:id="@+id/complaintLog"
+        android:title="Complaints"
+        android:icon="@drawable/cpmplaint_log"/>
+
+    <item
+        android:id="@+id/inboxId"
+        android:title="Inbox"
+        android:icon="@drawable/inbox_img"/>
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/person"/>
+
+    <item
+        android:id="@+id/out"
+        android:title="Sign-Out"
+        android:icon="@drawable/logout"/>
+
+</menu>

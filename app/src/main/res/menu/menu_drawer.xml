@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/track"
+        android:title="Track Complaint"
+        android:icon="@drawable/ic_baseline_view_list_24"/>
+
+    <item
+        android:id="@+id/inbox"
+        android:title="Inbox"
+        android:icon="@drawable/ic_baseline_inbox_24"/>
+
+    <item
+        android:id="@+id/about"
+        android:title="About Us"
+        android:icon="@drawable/ic_about_us_svgrepo_com"/>
+
+</menu>
